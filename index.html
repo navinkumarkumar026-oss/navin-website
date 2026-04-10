@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navin Web Services</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* Sections */
+.page {
+    height: 100vh;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Home */
+#home {
+    background: linear-gradient(135deg, #00cc00, #000);
+    color: white;
+}
+
+/* Services */
+#services {
+    background: #f5f5f5;
+}
+
+/* Contact */
+#contact {
+    background: #111;
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    background: white;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00cc00;
+    color: white;
+}
+
+/* WhatsApp floating */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Animation */
+h1 {
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div id="home" class="page">
+    <h1>Navin Web Services 🚀</h1>
+    <p>I create professional websites for your business</p>
+
+    <a href="#services">
+        <button class="btn">View Services</button>
+    </a>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="page">
+    <h1>Our Services 💼</h1>
+    <p>
+        ✔ Business Website<br>
+        ✔ Landing Page<br>
+        ✔ Portfolio Website<br>
+        ✔ Gaming Website<br>
+    </p>
+
+    <a href="#contact">
+        <button class="btn">Hire Me</button>
+    </a>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+    <h1>Contact Me 📞</h1>
+
+    <p>Click below to chat directly on WhatsApp</p>
+
+    <!-- WhatsApp direct message -->
+    <a href="https://wa.me/916203235413?text=Hello%20Navin%2C%20I%20want%20a%20website" target="_blank">
+        <button class="btn">Chat on WhatsApp</button>
+    </a>
+
+    <p style="margin-top:20px;">📱 6203235413</p>
+
+    <a href="#home">
+        <button class="btn">Back to Home</button>
+    </a>
+</div>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/916203235413?text=Hello%20Navin%2C%20I%20want%20a%20website" class="whatsapp" target="_blank">
+    Chat
+</a>
+
+</body>
+</html>
